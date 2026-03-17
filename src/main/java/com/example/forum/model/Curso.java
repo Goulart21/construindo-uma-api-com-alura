@@ -17,6 +17,10 @@ public class Curso {
 		this.subcategoria = subcategoria;
 	}
 
+	public String getSubcategoria() {
+		return subcategoria;
+	}
+
 	// getters
 	public Long getId() {
 		return id;

@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 @Entity
 public class Resposta {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String mensagem;
 

@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 public class Topico {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String titulo;
 	private String mensagem;

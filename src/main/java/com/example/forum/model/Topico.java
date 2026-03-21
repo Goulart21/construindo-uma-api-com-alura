@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 public class Topico {
 
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String titulo;
 	private String mensagem;
@@ -23,11 +23,7 @@ public class Topico {
 	@OneToMany
 	private List<Resposta> respostas = new ArrayList<>();
 
-	public Topico(String titulo, String mensagem, Curso curso) {
-		this.titulo = titulo;
-		this.mensagem = mensagem;
-		this.curso = curso;
-	}
+
 
 	@Override
 	public int hashCode() {
